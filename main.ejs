@@ -1,0 +1,33 @@
+<%- include('../partials/header') %>
+<%- include('../partials/menu') %>
+
+<div class="container">
+      <form id="movieForm" autocomplete="off">
+        <div class= "form-group">
+          <label for="Movie"> Movie Name</label>
+          <input class= "form-control" type="text" id="movie" placeholder="Movie...">
+        </div>
+        <div class="form-group">
+          <button  ng-click="fetch()">Search</button>
+        </div>
+      </form>
+      <div class="card" id="card-data">
+        <div class="front">
+          <h2 id="searchResult"></h2>
+          <a href="/review" class="btn btn-primary">Add Review</a>
+        </div>
+      </div>
+
+<div>
+<%#
+  <div class="card">
+    <div class="card-body">
+    <h4 class="card-title">Sun Up</h4>
+    <p class="card-text">Looks like the Sun has returned. Here's why.</p>
+    <a href="/review" class="btn btn-primary">Add Review</a>
+    </div>
+    </div>
+
+    
+%>
+<%- include('../partials/footer') %>
